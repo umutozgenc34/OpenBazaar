@@ -3,7 +3,49 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBazaar.Shared", "OpenBazaar.Shared\OpenBazaar.Shared.csproj", "{8D907839-8F8F-4182-A4EE-D74706EF2EE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBazaar.Model", "OpenBazaar.Model\OpenBazaar.Model.csproj", "{30E32F79-9322-4BE8-89D8-C6BFA2396255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBazaar.Repository", "OpenBazaar.Repository\OpenBazaar.Repository.csproj", "{0C416E55-F406-48E6-8690-CE7965B599B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBazaar.Service", "OpenBazaar.Service\OpenBazaar.Service.csproj", "{75C20C27-26EB-4FD8-80ED-398928ACFF51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBazaar.Api", "OpenBazaar.Api\OpenBazaar.Api.csproj", "{92B97767-D4FE-4C5F-B203-E358B3910426}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{97035D3B-912B-4BE2-8AFA-5BCF082762CC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D907839-8F8F-4182-A4EE-D74706EF2EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D907839-8F8F-4182-A4EE-D74706EF2EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D907839-8F8F-4182-A4EE-D74706EF2EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D907839-8F8F-4182-A4EE-D74706EF2EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E32F79-9322-4BE8-89D8-C6BFA2396255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E32F79-9322-4BE8-89D8-C6BFA2396255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E32F79-9322-4BE8-89D8-C6BFA2396255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E32F79-9322-4BE8-89D8-C6BFA2396255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C416E55-F406-48E6-8690-CE7965B599B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C416E55-F406-48E6-8690-CE7965B599B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C416E55-F406-48E6-8690-CE7965B599B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C416E55-F406-48E6-8690-CE7965B599B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75C20C27-26EB-4FD8-80ED-398928ACFF51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C20C27-26EB-4FD8-80ED-398928ACFF51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C20C27-26EB-4FD8-80ED-398928ACFF51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C20C27-26EB-4FD8-80ED-398928ACFF51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92B97767-D4FE-4C5F-B203-E358B3910426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92B97767-D4FE-4C5F-B203-E358B3910426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92B97767-D4FE-4C5F-B203-E358B3910426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92B97767-D4FE-4C5F-B203-E358B3910426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97035D3B-912B-4BE2-8AFA-5BCF082762CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97035D3B-912B-4BE2-8AFA-5BCF082762CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97035D3B-912B-4BE2-8AFA-5BCF082762CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97035D3B-912B-4BE2-8AFA-5BCF082762CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
