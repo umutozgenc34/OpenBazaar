@@ -19,10 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\OpenBazaar.Service\OpenBazaar.Service.csproj" />
     <ProjectReference Include="..\OpenBazaar.Shared\OpenBazaar.Shared.csproj" />
   </ItemGroup>

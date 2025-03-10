@@ -4,6 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 using OpenBazaar.Repository.Categories.Abstracts;
 using OpenBazaar.Repository.Categories.Concretes;
 using OpenBazaar.Repository.Context;
+using OpenBazaar.Repository.UnitOfWorks.Abstracts;
+using OpenBazaar.Repository.UnitOfWorks.Concretes;
 
 namespace OpenBazaar.Repository.Extensions;
 
@@ -11,6 +13,7 @@ public static class RepositoryExtension
 {
     public static IServiceCollection AddRepositoryExtension(this IServiceCollection services,IConfiguration configuration)
     {
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<ICategoryRepository, CategoryRepository>();
 
         services.AddDbContext<AppDbContext>(options =>
