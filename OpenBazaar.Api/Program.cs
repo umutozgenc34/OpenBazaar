@@ -1,13 +1,16 @@
 using OpenBazaar.Repository.Extensions;
 using OpenBazaar.Service;
 using OpenBazaar.Service.Extensions;
+using OpenBazaar.Shared.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddRepositoryExtension(builder.Configuration).AddServiceExtension(typeof(ServiceAssembly));
+builder.Services.AddRepositoryExtension(builder.Configuration)
+    .AddServiceExtension(typeof(ServiceAssembly))
+    .AddSharedExtension(builder.Configuration);
 
 var app = builder.Build();
 

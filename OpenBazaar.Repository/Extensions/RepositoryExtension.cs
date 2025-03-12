@@ -5,6 +5,8 @@ using OpenBazaar.Repository.Categories.Abstracts;
 using OpenBazaar.Repository.Categories.Concretes;
 using OpenBazaar.Repository.Context;
 using OpenBazaar.Repository.Interceptors;
+using OpenBazaar.Repository.Listings.Abstracts;
+using OpenBazaar.Repository.Listings.Concretes;
 using OpenBazaar.Repository.UnitOfWorks.Abstracts;
 using OpenBazaar.Repository.UnitOfWorks.Concretes;
 
@@ -16,6 +18,7 @@ public static class RepositoryExtension
     {
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<ICategoryRepository, CategoryRepository>();
+        services.AddScoped<IListingRepository,ListingRepository>();
 
         services.AddDbContext<AppDbContext>(options =>
         {
