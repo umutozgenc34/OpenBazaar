@@ -3,6 +3,8 @@ using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using OpenBazaar.Service.Categories.Abstracts;
 using OpenBazaar.Service.Categories.Concretes;
+using OpenBazaar.Service.Listings.Abstracts;
+using OpenBazaar.Service.Listings.Concretes;
 
 namespace OpenBazaar.Service.Extensions;
 
@@ -15,6 +17,7 @@ public static class ServiceExtension
         services.AddValidatorsFromAssemblyContaining(assembly);
 
         services.AddScoped<ICategoryService, CategoryService>();
+        services.AddScoped<IListingService,ListingService>();
 
         return services;
     }

@@ -10,8 +10,4 @@
     <ProjectReference Include="..\OpenBazaar.Shared\OpenBazaar.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Listings\Dtos\" />
-  </ItemGroup>
-
 </Project>

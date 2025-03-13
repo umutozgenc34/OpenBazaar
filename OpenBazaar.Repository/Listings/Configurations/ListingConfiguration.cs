@@ -30,5 +30,7 @@ public class ListingConfiguration : IEntityTypeConfiguration<Listing>
             .WithMany(x => x.Listings)
             .HasForeignKey(x => x.CategoryId)
             .OnDelete(DeleteBehavior.Restrict);
+
+        builder.Navigation(x => x.Category).AutoInclude();
     }
 }
