@@ -3,5 +3,9 @@ using OpenBazaar.Shared.Repositories.Abstracts;
 
 namespace OpenBazaar.Repository.Categories.Abstracts;
 
-public interface ICategoryRepository : IEfBaseRepository<Category, int>;
+public interface ICategoryRepository : IEfBaseRepository<Category, int>
+{
+    Task<Category?> GetCategoryWithListingsAsync(int id);
+    IQueryable<Category?> GetCategoryWithListings();
+}
 

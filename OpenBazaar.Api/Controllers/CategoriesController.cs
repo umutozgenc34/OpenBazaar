@@ -20,4 +20,12 @@ public class CategoriesController(ICategoryService categoryService) : CustomBase
 
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> DeleteCategory([FromRoute] int id) => CreateActionResult(await categoryService.DeleteAsync(id));
+
+    [HttpGet("{id:int}/listings")]
+    public async Task<IActionResult> GetCategoryWithListings([FromRoute] int id) => CreateActionResult(await categoryService
+        .GetCategoryWithListingsAsync(id));
+
+    [HttpGet("listings")]
+    public async Task<IActionResult> GetCategoryWithListings() => CreateActionResult(await categoryService
+        .GetCategoryWithListingsAsync());
 }
