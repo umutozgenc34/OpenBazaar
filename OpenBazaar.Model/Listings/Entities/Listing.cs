@@ -1,4 +1,5 @@
 ﻿using OpenBazaar.Model.Categories.Entities;
+using OpenBazaar.Model.Users.Entities;
 using OpenBazaar.Shared.Entities;
 
 namespace OpenBazaar.Model.Listings.Entities;
@@ -11,6 +12,8 @@ public class Listing : BaseEntity<Guid>, IAuditEntity
     public List<string>? ImageUrls { get; set; }
     public int CategoryId { get; set; } = default!;
     public Category Category { get; set; } = default!;
+    public string UserId { get; set; } 
+    public User User { get; set; } 
     public DateTime CreatedTime { get; set; }
     public DateTime UpdatedTime { get; set; }
 }

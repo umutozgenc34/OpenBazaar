@@ -25,6 +25,7 @@ public static class RepositoryExtension
             options.UseSqlServer(configuration.GetConnectionString("SqlServer"));
             options.AddInterceptors(new AuditDbContextInterceptor());
         });
+
         return services;
     }
 }
