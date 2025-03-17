@@ -12,6 +12,7 @@ public class AppDbContext(DbContextOptions options) : IdentityDbContext<User,Ide
 {
     public DbSet<Category> Categories { get; set; }
     public DbSet<Listing> Listings { get; set; }
+    public DbSet<UserRefreshToken> UserRefreshTokens { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

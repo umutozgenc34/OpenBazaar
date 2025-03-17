@@ -6,8 +6,8 @@ namespace OpenBazaar.Model.Users.Entities;
 
 public class User : IdentityUser, IAuditEntity
 {
-    public  required string FirstName { get; set; } 
-    public required string LastName { get; set; } 
+    public string FirstName { get; set; } = default!;
+    public string LastName { get; set; } = default!;
     public List<Listing> Listings { get; set; }
     public DateTime CreatedTime { get ; set ; }
     public DateTime UpdatedTime { get; set ; }

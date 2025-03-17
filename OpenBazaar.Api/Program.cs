@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddRepositoryExtension(builder.Configuration)
-    .AddServiceExtension(typeof(ServiceAssembly))
+    .AddServiceExtension(typeof(ServiceAssembly),builder.Configuration)
     .AddSharedExtension(builder.Configuration);
 
 builder.Services.AddIdentity<User, IdentityRole>(opt =>
@@ -31,6 +31,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
